@@ -13,7 +13,7 @@
 	
 	<%-- 1. 점수들의 평균 구하기 --%>
 	<%
-		int[] scores = {80, 90, 100, 95, 80};
+		int[] scores = {80, 90, 100, 95, 80};	
 		int sum = scores[0];
 		for(int i = 1; i < scores.length; i++) {
 			sum += scores[i];
@@ -46,7 +46,7 @@
 		return sum;
 	}
 	%>
-	<h2>1에서 50까지의 합은 <%= getSum(50) %></h2>
+	<h2>1부터 50까지의 합은 <%= getSum(50) %></h2>
 	
 	
 	<%-- 4. 나이 구하기 --%>
