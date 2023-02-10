@@ -33,6 +33,18 @@
 	    list.add(map);
 	%>
 	
+	<%!
+		public String getList(int i, List<Map<String, Object>> list) {
+	
+		String getList =
+			"<tr>" +
+				"<td>" + list.get(i).get("menu") + "</td>" +
+				"<td>" + list.get(i).get("name") + "</td>" +
+				"<td>" + list.get(i).get("point") + "</td>" +
+			"</tr>";
+		return getList;
+		}
+	%>
 	<div class="container">
 		<div class="text-center">
 			<h2>검색 결과</h2>
@@ -48,27 +60,18 @@
 			
 			for(int i = 0; i < list.size(); i++) { 
 				double point = (double) list.get(i).get("point");
-				if(search.equals(list.get(i).get("menu")) && point > 4.0 && select != null) {
+				if(search.equals(list.get(i).get("menu")) && point > 4.0 && select != null) {			
 		%>
-			<tr>
-				<td><%= list.get(i).get("menu") %></td>
-				<td><%= list.get(i).get("name") %></td>
-				<td><%= list.get(i).get("point") %></td>
-			</tr>
+			<%= getList(i, list) %>
 		<% 		
 			}  else if(search.equals(list.get(i).get("menu")) && select == null) {
 		%>
-			<tr>
-				<td><%= list.get(i).get("menu") %></td>
-				<td><%= list.get(i).get("name") %></td>
-				<td><%= list.get(i).get("point") %></td>
-			</tr>
+			<%= getList(i, list) %>
 		<%	
 			}
 		} 
 		%>
 		</table>
 	</div>
-
 </body>
 </html>
