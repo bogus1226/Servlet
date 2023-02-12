@@ -51,9 +51,9 @@
 		</div>
 		<table class="table text-center">
 			<tr>
-				<td><b>메뉴</b></td>
-				<td><b>상호</b></td>
-				<td><b>별점</b></td>
+				<td style= "width: 260.39px ; height: 49px; table-layout:fixed;"><b>메뉴</b></td>
+				<td style= "width: 260.39px ; height: 49px; table-layout:fixed;"><b>상호</b></td>
+				<td style= "width: 260.39px ; height: 49px; table-layout:fixed;"><b>별점</b></td>
 			</tr>
 		
 		<% 
