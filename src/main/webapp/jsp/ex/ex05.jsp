@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<%
+	<%	
 		// 달력 클래스 다루기
 		Calendar today = Calendar.getInstance();
 	
