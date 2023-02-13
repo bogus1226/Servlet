@@ -16,7 +16,7 @@
 		<h2>메뉴검색</h2>
 		<div class="d-flex align-items-center">
 			<input type="text" class="form-control col-3" name="search">
-			<label class="ml-2"><input type="checkbox" name="select" value="on"><span class="ml-1">4점 이하 제외</span></label>
+			<label class="ml-2"><input type="checkbox" name="select"><span class="ml-1">4점 이하 제외</span></label>
 		</div>
 		<button type="submit" class="btn btn-success mt-2">검색</button>		
 	</form>
