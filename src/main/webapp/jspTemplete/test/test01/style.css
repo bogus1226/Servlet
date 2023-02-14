@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#wrap {
+	width:1200px;
+	margin:auto;
+}
+
+header {
+	height:70px;
+}
+
+.main-menu {
+	height:50px;
+}
+
+footer {
+	height:50px;
+}
+
+ul {
+	width:100%;
+}
+
+.logoClick:hover {
+	color:#dddddd;
+}

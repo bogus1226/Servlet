@@ -26,12 +26,10 @@
 	<div class="container">
 		<h1>오늘부터 1일</h1>
 		<%
-			for(int i = 100; i <= 1000; i+=100) { // i는 100,200...1000일을 쓰기위해 100씩 증가하게 하였습니다.
-				
-				today.add(Calendar.DATE, 100); // 100,200...1000일수가 증가할때마다 100일씩 캘린더도 같이 증가하게 하였습니다. 
-				dateString = formatter.format(today.getTime());%> 
-				
-			<h1><%= i%>일 : <span class="text-danger"><%=dateString%></span></h1>
+			for(int i = 1; i <= 10; i++) { 	
+				today.add(Calendar.DATE, 100); 
+				dateString = formatter.format(today.getTime());%> 		
+			<h1><%=i * 100%>일 : <span class="text-danger"><%=dateString%></span></h1>
 		<%
 			}
 		%>
