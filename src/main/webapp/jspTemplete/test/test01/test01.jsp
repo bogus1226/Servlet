@@ -69,7 +69,7 @@
 					</tr>
 			<%
 				for(Map<String, String> tv:list) {
-					if(menu == null || menu.equals(tv.get("category")) || menu.equals("전체")){			
+					if(menu == null || menu.equals(tv.get("category"))){			
 			%>
 					<tr class="text-center">
 						<td><%=tv.get("ch")%></td>
