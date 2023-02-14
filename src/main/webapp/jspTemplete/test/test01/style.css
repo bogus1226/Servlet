@@ -21,6 +21,11 @@ ul {
 	width:100%;
 }
 
+.logoClick {
+	color:red;
+}
+
 .logoClick:hover {
-	color:#dddddd;
+	color:#f7929a;
+	text-decoration:none;
 }
