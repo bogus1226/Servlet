@@ -82,13 +82,17 @@
 	musicInfo.put("lyricist", "아이유");
 	musicList.add(musicInfo);
 	
-	String number = request.getParameter("id");   
-	int id  = Integer.parseInt(number);
+	String number = request.getParameter("id"); 
+
+	Integer id = null;
+	if(number != null) {
+		id  = Integer.parseInt(number);
+	}
+
 	
 	String title = request.getParameter("title");
 
 %>
-
 		<div id="wrap">
 		<jsp:include page ="header.jsp"/>
 		<jsp:include page ="menu.jsp"/>
@@ -98,8 +102,11 @@
 			<div class="songInfo">
 				<div class="d-flex border border-success h-100">
 					<% for(Map<String, Object> songInfo:musicList) {
-							Integer songId = (Integer) songInfo.get("id");
-							if(id == songId){
+							Integer songId = null;
+							if(number != null) {
+								songId = (Integer) songInfo.get("id");
+							}	
+							if((title == null && id == songId) || (title != null && title.equals(songInfo.get("title")))){
 								Integer time = (Integer)songInfo.get("time");%>
 					<div class="ml-3 d-flex align-items-center">
 						<img width="160"; src="<%= songInfo.get("thumbnail") %>">

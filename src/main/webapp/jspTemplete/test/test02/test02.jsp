@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+   <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %> 
 <!DOCTYPE html>
@@ -90,7 +90,7 @@
 		<jsp:include page ="singerInfo.jsp"/>
 		
 		<section class="contents mt-2">
-			<h4>곡 목록</h4>
+			<h5><b>곡 목록</b></h5>
 			<table class="table text-center">
 				<tr>
 					<th>no</th>
@@ -104,9 +104,7 @@
 					<td><%= info.get("album") %></td>
 				</tr>
 				
-			<%	
-				}
-			%>
+			<%	} %>
 			</table>
 		</section>
 		

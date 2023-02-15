@@ -4,7 +4,7 @@
     	
 			<header class="mt-3">
 				<form method="get" action="/jspTemplete/test/test02/test02_input.jsp?" class="d-flex">
-					<h2 class="text-success">Melong</h2>
+					<h2><a class="logo_a" href="/jspTemplete/test/test02/test02.jsp">Melong</a></h2>
 					<div class="input-group ml-4 col-4 h-25">
 						<input type="text" class="form-control" name="title">
 						<div class="input-group-append">
