@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#wrap {
+	width:1200px;
+	margin:auto;
+}
+
+header {
+	height:70px;
+}
+
+.main-menu {
+	height:50px;
+}
+
+.singerInfo {
+	height:200px;
+}
+
+.songInfo {
+	height:200px;
+}
+
+footer {
+	height:80px;
+}
