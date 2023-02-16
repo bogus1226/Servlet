@@ -8,7 +8,7 @@
 					<div class="input-group ml-4 col-4 h-25">
 						<input type="text" class="form-control" name="title">
 						<div class="input-group-append">
-							<button class="btn btn-info" type="submit">검색</button>
+							<button class="btn btn-success" type="submit">검색</button>
 						</div>
 					</div>
 				</form>
