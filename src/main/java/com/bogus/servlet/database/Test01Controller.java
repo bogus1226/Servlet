@@ -26,7 +26,7 @@ public class Test01Controller extends HttpServlet{
 		
 		mysqlService.connect();
 		
-		ResultSet resultSet = mysqlService.select("SELECT * FROM `real_estate` ORDER BY `id` DESC LIMIT 10");
+		ResultSet resultSet = mysqlService.select("SELECT `address`, `area`, `type` FROM `real_estate` ORDER BY `id` DESC LIMIT 10");
 		
 //		out.println("<html><head><title>중고 목록</title></head><body>");
 		
@@ -49,6 +49,7 @@ public class Test01Controller extends HttpServlet{
 //		int count = mysqlService.update(insertQuery);
 //		out.println("<div>삽입 결과 : " + count + "</div>");
 //		out.println("</body></html>");
+		
 		mysqlService.disconnect();
 	}
 	
