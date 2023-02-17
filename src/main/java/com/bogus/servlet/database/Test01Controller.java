@@ -33,7 +33,7 @@ public class Test01Controller extends HttpServlet{
 		try {
 			while(resultSet.next()) {
 				String address = resultSet.getString("address");
-				int area = Integer.parseInt(resultSet.getString("area"));
+				int area = resultSet.getInt("area");
 				String type = resultSet.getString("type");
 				out.println("매물 주소 : " + address + ", 면적 : " + area + ", 타입 : " + type);
 			}
