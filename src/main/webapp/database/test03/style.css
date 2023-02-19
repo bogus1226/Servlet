@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#wrap {
+	width:1200px;
+	margin:auto;
+}
+
+
+
+header {
+	height:80px;
+	background-color:#fc884e;
+}
+
+.main-menu {
+	height:60px;
+	background-color:#fc884e;
+}
+
+.main-contents > .content {
+	width:393px;
+	height:300px;
+	border: 3px solid #fc884e;
+	margin:3px;		
+}
+
+.main-contents > .content:hover {
+	background-color:#faf2ed;
+}
+
+.nick-name {
+	color:#fc884e;
+}
+
+
+.goods_up > .goods_up_box {
+	width:1000px;
+}
+
+footer {
+	height:70px;
+}
+
+ul {
+	width:100%;
+}
+
+.li-text {
+	font-size:20px;
+}

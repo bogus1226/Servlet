@@ -42,9 +42,7 @@
 			</tbody>
 		</table>
 		<div class="d-flex justify-content-end">
-			<form method="get" action="/database/test02_input.jsp"> 
-				<button type="submit" class="btn btn-success">사이트 추가</button>
-			</form>
+			<a class="btn btn-success" href="/database/test02_input.jsp">사이트 추가</a>
 		</div>
 	</div>
 </body>
