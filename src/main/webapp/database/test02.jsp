@@ -18,7 +18,7 @@
 		MysqlService mysqlService = MysqlService.getInstance();
 		mysqlService.connect();
 		
-		String query = "SELECT * FROM `book_mark`;";
+		String query = "SELECT * FROM `book_mark` ORDER BY `id` DESC;";
 		ResultSet resultSet = mysqlService.select(query);
 	%>
 

@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="container">
-		<form method="get" action="/database/test02/insert">
+		<form method="post" action="/database/test02/insert">
 			<h3><b>즐겨찾기 추가</b></h3>
 			<div>
 				<label class="m-0"><b>사이트명:</b></label>

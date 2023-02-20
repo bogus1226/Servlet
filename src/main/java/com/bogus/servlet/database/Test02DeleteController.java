@@ -21,7 +21,7 @@ public class Test02DeleteController extends HttpServlet{
 		
 		mysqlService.connect();
 		
-		String query = "DELETE FROM `book_mark` WHERE `id` = " + id +"; ";
+		String query = "DELETE FROM `book_mark` WHERE `id` = " + id + ";";
 		
 		int count = mysqlService.update(query);
 		
